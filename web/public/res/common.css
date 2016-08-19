@@ -1,0 +1,203 @@
+body{background:#F1F1F1;}
+.modal-container{position:absolute;}
+.modal{display:block !important;opacity:1 !important;}
+.modal-dialog{margin-top:100px;}
+
+.alert-enter {
+  opacity: 0.01;
+}
+
+.alert-enter.alert-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.alert-leave {
+  opacity: 1;
+}
+
+.alert-leave.alert-leave-active {
+  opacity: 0.01;
+  transition: opacity 100ms ease-in;
+}
+
+
+.login-form, .join-form{width:400px;margin:200px auto 0;}
+
+.tools .glyphicon:hover{color:#bbb;}
+a.glyphicon{color:inherit;}
+a.glyphicon:hover{text-decoration: none;}
+
+
+.scroll-container{
+	overflow-y:auto;
+	flex:1;
+}
+.auction-visit-itemlist{
+	
+}
+.auction-visit-item{
+	position: relative;
+	width:300px;
+	/*float:left;*/
+	margin-right:5px;
+	font-size: 12px;
+	
+}
+.auction-visit-item .earning-rate-list-item .tools{
+	float:right;
+}
+
+.auction-visit-item .panel-footer{
+		
+}
+
+.earning-rate-list-item{padding:8px;}
+
+.auction-visit-item ul,
+.auction-visit-item ul li{list-style: none;}
+.auction-visit-item ul{
+	padding:0;margin:0;
+}
+
+
+.float-button{
+    position: absolute;
+    height: 56px;
+    width: 56px;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    background: #D43A2F;
+    color:white;
+    border-radius: 100%;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 56px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.float-button:hover{
+	text-decoration: none;
+	color:white;
+	background:#f47973; 
+}
+
+.overlay{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.report-form, .earning-sheet-form{
+	position: absolute;
+	width: auto;
+	height: auto;
+	margin: 50px;
+	top: 0; left: 0; right: 0;
+	z-index: 3;
+}
+.earning-sheet-form{
+	width:600px;
+	margin:100px auto 0;
+}
+
+.tools{cursor: pointer;}
+
+.col-md-4.row{height: 100%;overflow-y: auto;}
+.report-form .panel-body, .earning-sheet-form .panel-body{
+	padding:0;
+}
+
+.panel .panel-heading .panel-title .tools{float:right;}
+
+
+.earning-rate-title{font-weight:bold;padding:5px 0;}
+.earning-rate-title .tools{float:right;}
+
+.report-manager{display:flex;height:100vh;overflow:hidden;}
+.menu{width:280px;background:#fff;height:100vh;}
+.menu.closed{width:47px;}
+
+.menu .menu-items{list-style:none;padding:0;margin:0;}
+.menu .menu-items .menu-item{height:38px;line-height:38px;transition:background 0.3s;font-size:14px;cursor:pointer;}
+
+.menu .menu-items.setting{margin-bottom:1px;}
+.menu .menu-items.setting .menu-item{height:45px;line-height:45px;}
+
+.menu .menu-items.setting .menu-item.user-info{background:#9c27b0;}
+.menu .menu-items.setting .menu-item.user-info .user-icon{
+	background:url(../img/user.png) no-repeat center;width:45px;height:45px;display:inline-block;vertical-align:middle;
+} 
+.menu .menu-items.setting .menu-item.user-info .user-name{
+	color:#fff;
+}
+.menu .menu-items.setting .menu-item.user-info .logout-btn{
+	margin-right:15px;
+	float:right;
+	vertical-align:middle;
+	color:#fff;
+}
+.menu .menu-items.setting .menu-item.user-info .logout-btn:hover{
+	color:#43145B;transition:all 0.3s;
+}
+
+.menu .menu-items.category .menu-item{padding:0 8px;}
+.menu .menu-items.category .menu-item:hover{background:#4caf50;color:#fff;}
+
+.menu .menu-items.category .menu-item .menu-icon{width:40px;display:inline-block;font-size:20px;padding:0 10px 0 2px;vertical-align:middle;}
+
+.menu .hamburger-btn{width:40px;display:inline-block;font-size:20px;padding:0 10px;cursor:pointer;}
+.menu .search-input{width:200px;display:inline-block;}
+.menu.closed .search-input{display:none;}
+.menu .search-btn{width:40px;display:inline-block;font-size:20px;padding:0 10px;cursor:pointer;}
+.menu.closed .search-btn{display:none;}
+.menu.closed .user-name{display:none;}
+.menu.closed .logout-btn{display:none;}
+
+.menu.closed .menu-text{display:none;}
+
+
+.reports{
+	overflow-x:hidden;
+	overflow-y:auto;	
+}
+.auction-visit-itemlist{
+	padding:10px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+
+
+
+
+.react-rater {
+	display: inline-block;
+	line-height: normal; 
+	font-size:18px;
+}
+.react-rater a {
+	cursor: pointer;
+	color: #ccc; 
+}
+.react-rater a:hover{
+	text-decoration:none;
+}
+.react-rater a.will-be-active {
+	color: #ffdd99; 
+}
+.react-rater a.is-active {
+	color: #fc6; 
+}
+.react-rater a.is-disabled {
+	color: #ccc;
+	cursor: not-allowed; 
+}
+.react-rater.is-disabled a {
+	cursor: default; 
+}

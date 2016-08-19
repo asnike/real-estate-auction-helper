@@ -1,0 +1,20 @@
+web:
+  build: ./web
+  ports:
+    - "8080:3000"
+  links:
+    - mongo
+
+nginx:
+  restart: always
+  build: ./nginx/
+  ports:
+    - "80:80"
+  links:
+    - web:web
+mongo:
+  image: tutum/mongodb:3.2
+  volumes:
+    - /home/docker/mongodb:/data/db
+  ports: 
+    - "27017:27017"
