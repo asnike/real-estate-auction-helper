@@ -10,6 +10,8 @@ import EditReport from './components/EditReport';
 import NewEarningRate from './components/NewEarningRate';
 import EditEarningRate from './components/EditEarningRate';
 
+import MapView from './components/MapView';
+
 export default (
 	<Route path="/" component={AuctionVisitReportApp}>
 		<IndexRedirect to="/login" />
@@ -18,9 +20,10 @@ export default (
 		<Route path="/my" component={ReportManager}>
 			<Route path="new" component={NewReport} />
 			<Route path="edit/:report_id" component={EditReport} />
-			
 			<Route path="new_earning/:report_id" component={NewEarningRate} />
 			<Route path="edit_earning/:earningratesheet_id" component={EditEarningRate} />
+			
+			<Route path="map" component={MapView} /> 
 		</Route>
 	</Route>
 	

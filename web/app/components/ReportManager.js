@@ -55,7 +55,7 @@ class ReportManager extends Component{
 		});
 		return(
 			<div className="report-manager">
-				<Navigator  username={cookie.load('username')} />
+				<Navigator username={cookie.load('username')} />
 				<AuctionVisitReportItemList items={this.props.reports} />
 				{reportModal}
 			</div>

@@ -153,8 +153,13 @@ app.use('/api/reportitems', _auth2.default.checkAuthenticate);
 app.use('/api/reportitem', _auth2.default.checkAuthenticate);
 app.use('/api/earning_rate', _auth2.default.checkAuthenticate);
 app.use('/api/earning', _auth2.default.checkAuthenticate);
+app.use('/api/map', _auth2.default.checkAuthenticate);
 
 var factory = _react2.default.createFactory(_AuctionVisitReportApp2.default);
+
+app.get('/api/map', function (request, response, next) {
+	response.json({ member: response.member });
+});
 
 app.post('/api/login', function (request, response, next) {
 	console.log('login');

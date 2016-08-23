@@ -6,6 +6,8 @@ import * as HamburgerActions from '../actions/hamburger';
 import * as AuthActions from '../actions/auth';
 import * as ReportActions from '../actions/report';
 
+import { Link } from 'react-router';
+
 
 class Navigator extends Component{
 	constructor(){
@@ -55,6 +57,14 @@ class Navigator extends Component{
 						<span className="menu-icon">
 							<i className="glyphicon glyphicon-list-alt"></i>
 						</span><span className="menu-text">Total</span>
+					</li>
+					
+					<li className="menu-item">
+						<Link to={"/my/map"}>
+							<span className="menu-icon">
+								<i className="glyphicon glyphicon-map-marker"></i>
+							</span><span className="menu-text">Map</span>
+						</Link>
 					</li>
 				</ul>
 			</div>

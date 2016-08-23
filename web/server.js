@@ -103,8 +103,13 @@ app.use('/api/reportitems', auth.checkAuthenticate);
 app.use('/api/reportitem', auth.checkAuthenticate);
 app.use('/api/earning_rate', auth.checkAuthenticate);
 app.use('/api/earning', auth.checkAuthenticate);
+app.use('/api/map', auth.checkAuthenticate);
 
 const factory = React.createFactory(AuctionVisitReportApp);
+
+app.get('/api/map', (request, response, next) => {
+	response.json({member:response.member});
+});
 
 app.post('/api/login', 
 	(request, response, next) => {
